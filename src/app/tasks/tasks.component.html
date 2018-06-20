@@ -1,0 +1,24 @@
+<h2>{{task.taskName}} Details</h2>
+<div><span>Type: </span>{{task.taskType}}</div>
+<div><span>Associated file: </span>{{task.associatedFile}}</div>
+<div><span>Description: </span>{{task.description}}</div>
+
+<br>
+<br>
+<div>
+  <label> task name:
+    <input [(ngModel)]="task.taskName" placeholder="task name">
+  </label>
+</div>
+<br>
+<br>
+
+<h2>My Tasks</h2>
+<ul class="tasks">
+  <li *ngFor="let task of tasks">
+    <span class="badge">{{task.taskName}}</span>
+    <br>
+    {{task.taskType}}
+  </li>
+</ul>
+
