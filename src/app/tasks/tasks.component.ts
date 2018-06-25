@@ -10,13 +10,21 @@ import {TASKS} from '../mock-tasks';
 export class TasksComponent implements OnInit {
 
   task: Task = {
-    taskName: 'fuck off',
+    taskName: 'clutch off',
     taskType: 'just starting',
     associatedFile: 'none',
     description: 'just making sure it all works.'
 
   };
   tasks =  TASKS;
+
+  selectedTask: Task;
+
+  onSelect(task: Task): void {
+    this.selectedTask = task;
+  }
+
+
 
   constructor() { }
 

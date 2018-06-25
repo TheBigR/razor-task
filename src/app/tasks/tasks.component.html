@@ -12,13 +12,19 @@
 </div>
 <br>
 <br>
-
-<h2>My Tasks</h2>
-<ul class="tasks">
-  <li *ngFor="let task of tasks">
-    <span class="badge">{{task.taskName}}</span>
+<div style="height: 400px; width: 400px; margin: auto" >
+<p-carousel [value]="tasks" [numVisible]="1" headerText="Tasks: " [circular]="true"  >
+  <ng-template let-item pTemplate="item"  >
+    {{item.taskName}}
     <br>
-    {{task.taskType}}
-  </li>
-</ul>
+    <br>
+    {{item.description}}
+  </ng-template>
+</p-carousel>
+</div>
+
+
+
+
+
 
