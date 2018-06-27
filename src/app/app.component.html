@@ -1,9 +1,12 @@
 <head></head>
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to {{ title }}
   </h1>
-  <app-tasks></app-tasks>
+  <nav>
+    <a routerLink="/tasks">Tasks</a>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
 
 

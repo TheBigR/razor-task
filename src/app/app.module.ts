@@ -7,8 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {CarouselModule} from 'primeng/primeng';
 import {HttpClientModule} from '@angular/common/http';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
-
-
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,8 @@ import { TaskDetailComponent } from './task-detail/task-detail.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    CarouselModule
+    CarouselModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

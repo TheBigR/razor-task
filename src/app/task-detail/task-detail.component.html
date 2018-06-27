@@ -12,20 +12,20 @@
     description: {{task.description}}
   </div>
     <div class="tasks"  [ngSwitch]="task.taskId">
-      <div class="answers" *ngSwitchCase="'0'">
+      <div class="answers" *ngSwitchCase="0">
         <h1>First Answer</h1>
       </div>
-      <div  class="answers" *ngSwitchCase="'1'">
+      <div  class="answers" *ngSwitchCase="1">
         <h1>Second Answer</h1>
       </div>
-      <div class="answers" *ngSwitchCase="'2'">
+      <div class="answers" *ngSwitchCase="2">
         <h1>Third Answer</h1>
       </div>
-      <div *ngSwitchCase="'3'">
+      <div *ngSwitchCase="3">
         <h1>Fourth Answer</h1>
         <img alt="grumpy cat" src='{{task.associatedFile}}'>
       </div>
-      <div *ngSwitchCase="'4'">
+      <div *ngSwitchCase="4">
         <h1>Fifth Answer</h1>
         <img alt="sloppy design" src="{{task.associatedFile}}">
       </div>
@@ -33,6 +33,8 @@
         this is the default value
       </div>
     </div>
+
+  <button (click)="goBack()">Back</button>
 
 
 

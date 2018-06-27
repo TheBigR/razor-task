@@ -10,11 +10,11 @@
     <a class="taskDescription">{{task.description}}</a>
     <br>
     <br>
-    <button class="buttons" (click)="onSelect(tasks.indexOf(task))">Get answer</button>
+    <button class="buttons" routerLink="/detail/{{task.taskId}}">Get answer</button>
   </ng-template>
 </p-carousel>
 </div>
-<app-task-detail [task]="selectedTask"></app-task-detail>
+
 
 
 

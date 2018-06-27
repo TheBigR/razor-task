@@ -11,14 +11,6 @@ export class TasksComponent implements OnInit {
 
   tasks: Task[];
 
-  selectedTask: Task;
-
-  onSelect(taskIndex: number): void {
-    this.selectedTask = this.tasks[taskIndex];
-    this.selectedTask.taskId = taskIndex;
-    console.log(this.selectedTask.taskName);
-    console.log(taskIndex);
-  }
   constructor(private taskService: TaskService) { }
   getTasks(): void {
     this.taskService.getTasks().subscribe(tasks => this.tasks = tasks);
