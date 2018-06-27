@@ -14,7 +14,6 @@ import {TaskService} from '../services/task.service';
 export class TaskDetailComponent implements OnInit {
 
   @Input() task: Task;
-
   constructor(private route: ActivatedRoute, private taskService: TaskService, private location: Location) { }
 
   ngOnInit() {
