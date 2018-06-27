@@ -1,0 +1,16 @@
+.carouselContainer {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+
+.taskName {
+  font-family: "Monotype Corsiva";
+  font-size: x-large;
+
+}
+
+.taskDescription{
+  font-family: "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: large;
+}

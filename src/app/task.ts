@@ -1,7 +1,8 @@
 export class Task {
+  taskId?: number;
   taskName: string;
   taskType: string;
   description: string;
-  associatedFile: string;
-
+  associatedFile?: any;
+  taskAnswer?: string;
 }

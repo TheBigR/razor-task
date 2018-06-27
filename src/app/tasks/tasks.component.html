@@ -1,27 +1,22 @@
-<h2>{{task.taskName}} Details</h2>
-<div><span>Type: </span>{{task.taskType}}</div>
-<div><span>Associated file: </span>{{task.associatedFile}}</div>
-<div><span>Description: </span>{{task.description}}</div>
 
 <br>
 <br>
-<div>
-  <label> task name:
-    <input [(ngModel)]="task.taskName" placeholder="task name">
-  </label>
-</div>
-<br>
-<br>
-<div style="height: 400px; width: 400px; margin: auto" >
+<div class="carouselContainer"  >
 <p-carousel [value]="tasks" [numVisible]="1" headerText="Tasks: " [circular]="true"  >
-  <ng-template let-item pTemplate="item"  >
-    {{item.taskName}}
+  <ng-template let-task pTemplate="task"  >
+    <a class="taskName" >{{task.taskName}}</a>
     <br>
     <br>
-    {{item.description}}
+    <a class="taskDescription">{{task.description}}</a>
+    <br>
+    <br>
+    <button class="buttons" (click)="onSelect(tasks.indexOf(task))">Get answer</button>
   </ng-template>
 </p-carousel>
 </div>
+<app-task-detail [task]="selectedTask"></app-task-detail>
+
+
 
 
 

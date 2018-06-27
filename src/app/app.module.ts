@@ -6,12 +6,15 @@ import { TasksComponent } from './tasks/tasks.component';
 import {FormsModule} from '@angular/forms';
 import {CarouselModule} from 'primeng/primeng';
 import {HttpClientModule} from '@angular/common/http';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TasksComponent
+    TasksComponent,
+    TaskDetailComponent
   ],
   imports: [
     BrowserModule,
