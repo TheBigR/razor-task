@@ -10,7 +10,9 @@
     <a class="taskDescription">{{task.description}}</a>
     <br>
     <br>
-    <button class="buttons" routerLink="/detail/{{task.taskId}}">Get answer</button>
+    <div *ngIf="currentPath === '/tasks'">
+    <button  pButton type="button" label="Get answer" routerLink="/detail/{{task.taskId}}"></button>
+    </div>
   </ng-template>
 </p-carousel>
 </div>

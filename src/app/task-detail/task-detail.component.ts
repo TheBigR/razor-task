@@ -24,6 +24,8 @@ export class TaskDetailComponent implements OnInit {
   windData: any;
   windRes: NorthWindData[];
 
+
+
   ngOnInit() {
     this.getTask();
     this.getNwData();

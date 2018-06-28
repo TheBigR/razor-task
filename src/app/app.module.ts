@@ -8,6 +8,7 @@ import {CarouselModule} from 'primeng/primeng';
 import {HttpClientModule} from '@angular/common/http';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
 import { AppRoutingModule } from './/app-routing.module';
+import {ButtonModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './/app-routing.module';
     FormsModule,
     HttpClientModule,
     CarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
