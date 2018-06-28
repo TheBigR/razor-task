@@ -1,4 +1,4 @@
-<div *ngIf="task">
+<div class="taskDetails" *ngIf="task">
   <div>
   {{task.taskName}}
   </div>
@@ -11,7 +11,9 @@
   <div>
     description: {{task.description}}
   </div>
-  <button (click)="goBack()">Back</button>
+  <br>
+  <br>
+  <button class="buttons" (click)="goBack()">Back</button>
   <br>
   <br>
   <div class="tasks"  [ngSwitch]="task.taskId">
@@ -21,19 +23,51 @@
     </div>
     <div  class="answers" *ngSwitchCase="'1'">
       <h1>Second Answer</h1>
-
-      <button (click)="getSecondAnswer()">go fetch</button>
+      <ul class="sortedData">
+        <li *ngFor="let countryData of windRes">
+           <div>
+             <span class="country"> {{countryData.country}} </span>
+             <br>
+             <br>
+             <span class="city"> {{countryData.city}}</span>
+             <br>
+             <br>
+           </div>
+        </li>
+      </ul>
     </div>
     <div class="answers" *ngSwitchCase="'2'">
       <h1>Third Answer</h1>
+      <br>
+      <br>
+      the code in the associated file contains a less code with run time modifications
+      <br>
+      for the color of a box.
     </div>
     <div *ngSwitchCase="'3'">
       <h1>Fourth Answer</h1>
+      <h2>Grumpy cat is happy to see you.</h2>
       <img alt="grumpy cat" src='{{task.associatedFile}}'>
     </div>
     <div *ngSwitchCase="'4'">
       <h1>Fifth Answer</h1>
       <img alt="sloppy design" src="{{task.associatedFile}}">
+      <br>
+      <br>
+      <div class="answers">
+        the design in the associated file is extremly sloppy,
+        <br>
+        there is no way to understand where components start and where they end.
+        <br>
+        there are too many components on the screen.
+        <br>
+        even if there is a multilingual support - there is no way to find it.
+        <br>
+        it's not clear which part is permanent menu button and which is not.
+      </div>
+    <div>
+
+      </div>
     </div>
     <div *ngSwitchDefault>
       this is the default value

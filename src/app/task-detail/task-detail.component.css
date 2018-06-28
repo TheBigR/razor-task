@@ -1,0 +1,22 @@
+.city {
+  font-size: large;
+  color: black;
+
+}
+
+.country{
+  font-family: "Monotype Corsiva", sans-serif;
+  font-size: x-large;
+  color: #336699;
+  font-weight: bold;
+}
+
+.answers{
+   color: darkblue;
+}
+
+.taskDetails {
+  color: black;
+  font-family: "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: large;
+}
